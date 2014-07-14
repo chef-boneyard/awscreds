@@ -42,6 +42,6 @@ template node['awscreds']['filename'] do
   owner node['awscreds']['owner']
   group node['awscreds']['group']
   mode "0600"
-  senstive true
+  sensitive true
   variables :creds => creds, :default_creds => default_creds
 end

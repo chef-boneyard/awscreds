@@ -42,5 +42,6 @@ template node['awscreds']['filename'] do
   owner "root"
   group "root"
   mode "0600"
+  senstive true
   variables :creds => creds, :default_creds => default_creds
 end

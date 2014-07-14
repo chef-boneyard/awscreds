@@ -1,4 +1,6 @@
 default['awscreds']['filename'] = '/root/.aws/config'
+default['awscreds']['owner'] = 'root'
+default['awscreds']['group'] = 'root'
 default['awscreds']['vault_name'] = 'awscreds'
 default['awscreds']['vault_search'] = '*:*'
 default['awscreds']['default_profile'] = 'default'

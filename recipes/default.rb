@@ -39,8 +39,8 @@ end
 
 template node['awscreds']['filename'] do
   source "config.erb"
-  owner "root"
-  group "root"
+  owner node['awscreds']['owner']
+  group node['awscreds']['group']
   mode "0600"
   senstive true
   variables :creds => creds, :default_creds => default_creds

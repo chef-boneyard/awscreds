@@ -1,6 +1,6 @@
 name             'awscreds'
 maintainer       'Chef Software, Inc.'
-maintainer_email 'cookbooks@getchef.com'
+maintainer_email 'cookbooks@chef.io'
 license          'Apache 2.0'
 description      'Creates /root/.aws/config from chef-vault'
 long_description %(
@@ -10,3 +10,6 @@ long_description %(
 version          '0.1.0'
 
 depends 'chef-vault'
+
+source_url 'https://github.com/opscode-cookbooks/awscreds' if respond_to?(:source_url)
+issues_url 'https://github.com/opscode-cookbooks/awscreds/issues' if respond_to?(:issues_url)

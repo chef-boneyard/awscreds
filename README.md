@@ -1,5 +1,8 @@
 # awscreds-cookbook
 
+[![Build Status](https://travis-ci.org/opscode-cookbooks/awscreds.svg?branch=master)](https://travis-ci.org/opscode-cookbooks/awscreds)
+[![Cookbook Version](https://img.shields.io/cookbook/v/awscreds.svg)](https://supermarket.chef.io/cookbooks/awscreds)
+
 Loads credentials from chef vault and creates an aws config file (.ini
 format) from the loaded credentials. Supports multiple profiles and
 alternate locations for the credentials file.

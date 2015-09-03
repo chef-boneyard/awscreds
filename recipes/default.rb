@@ -23,10 +23,10 @@ include_recipe 'chef-vault'
 creds = {}
 default_creds = nil
 items = search(node['awscreds']['vault_name'],
-               node['awscreds']['vault_search']).map{|i| i.id}
+               node['awscreds']['vault_search']).map(&:id)
 items.each do |i|
   next if i.end_with?('_keys') # Skip vault metadata
-  if i == node['awscreds']['default_profile'] then
+  if i == node['awscreds']['default_profile']
     default_creds = chef_vault_item(node['awscreds']['vault_name'], i)
   else
     creds[i] = chef_vault_item(node['awscreds']['vault_name'], i)
@@ -38,10 +38,10 @@ directory File.dirname(node['awscreds']['filename']) do
 end
 
 template node['awscreds']['filename'] do
-  source "config.erb"
+  source 'config.erb'
   owner node['awscreds']['owner']
   group node['awscreds']['group']
-  mode "0600"
+  mode '0600'
   sensitive true
-  variables :creds => creds, :default_creds => default_creds
+  variables creds: creds, default_creds: default_creds
 end

@@ -11,5 +11,5 @@ version '0.1.0'
 
 depends 'chef-vault'
 
-source_url 'https://github.com/opscode-cookbooks/awscreds' if respond_to?(:source_url)
-issues_url 'https://github.com/opscode-cookbooks/awscreds/issues' if respond_to?(:issues_url)
+source_url 'https://github.com/chef-cookbooks/awscreds' if respond_to?(:source_url)
+issues_url 'https://github.com/chef-cookbooks/awscreds/issues' if respond_to?(:issues_url)

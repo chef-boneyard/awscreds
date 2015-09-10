@@ -9,6 +9,6 @@ Encoding:
 LineLength:
   Enabled: false
 MethodLength:
-  Max: 30
-SpecialGlobalVars:
+  Enabled: false
+SingleSpaceBeforeFirstArg:
   Enabled: false

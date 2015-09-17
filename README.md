@@ -7,6 +7,16 @@ Loads credentials from chef vault and creates an aws config file (.ini
 format) from the loaded credentials. Supports multiple profiles and
 alternate locations for the credentials file.
 
+##Requirements
+#### Platforms
+- Any platform supported by Chef
+
+#### Chef
+- Chef 11+
+
+#### Cookbooks
+- none
+
 ## Attributes
 
 * `node['awscreds']['filename']` - The name of the file to create that
@@ -54,8 +64,7 @@ Include `awscreds` in your node's `run_list`:
 }
 ```
 
-License & Authors
------------------
+##License & Authors
 
 **Author:** Cookbook Engineering Team (<cookbooks@chef.io>)
 **Copyright:** 2009-2015, Chef Software, Inc.

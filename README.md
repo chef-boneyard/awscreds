@@ -12,7 +12,7 @@ alternate locations for the credentials file.
 - Any platform supported by Chef
 
 #### Chef
-- Chef 11+
+- Chef 12.1+
 
 #### Cookbooks
 - none
@@ -68,7 +68,7 @@ Include `awscreds` in your node's `run_list`:
 
 **Author:** Cookbook Engineering Team ([cookbooks@chef.io](mailto:cookbooks@chef.io))
 
-**Copyright:** 2009-2015, Chef Software, Inc.
+**Copyright:** 2009-2016, Chef Software, Inc.
 
 ```
 Licensed under the Apache License, Version 2.0 (the "License");

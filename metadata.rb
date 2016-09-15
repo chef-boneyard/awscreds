@@ -7,7 +7,7 @@ long_description %(
   Loads credentials from chef vault and creates an aws config file (.ini
   format) from the loaded credentials. Supports multiple profiles and
   alternate locations for the credentials file.)
-version '0.1.0'
+version '1.0.0'
 
 depends 'chef-vault'
 

@@ -1,7 +1,7 @@
 name 'awscreds'
 maintainer 'Chef Software, Inc.'
 maintainer_email 'cookbooks@chef.io'
-license 'Apache 2.0'
+license 'Apache-2.0'
 description 'Creates /root/.aws/config from chef-vault'
 long_description %(
   Loads credentials from chef vault and creates an aws config file (.ini

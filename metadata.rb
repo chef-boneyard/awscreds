@@ -9,6 +9,10 @@ long_description %(
   alternate locations for the credentials file.)
 version '1.0.0'
 
+%w(amazon centos debian mac_os_x opensuse opensuseleap oracle redhat scientific solaris suse ubuntu windows aix).each do |os|
+    supports os
+end
+
 depends 'chef-vault'
 
 source_url 'https://github.com/chef-cookbooks/awscreds'

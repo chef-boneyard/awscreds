@@ -7,7 +7,7 @@ long_description %(
   Loads credentials from chef vault and creates an aws config file (.ini
   format) from the loaded credentials. Supports multiple profiles and
   alternate locations for the credentials file.)
-version '1.0.0'
+version '1.0.1'
 
 %w(amazon centos debian mac_os_x opensuse opensuseleap oracle redhat scientific solaris suse ubuntu windows aix).each do |os|
     supports os

@@ -2,6 +2,10 @@ awscreds Cookbook CHANGELOG
 ===========================
 This file is used to list changes made in each version of the awscreds cookbook.
 
+## 1.0.2 (2017-08-31)
+
+- Resolve Foodcritic warning in the metadata
+
 ## 1.0.1 (2017-04-11)
 
 - Test with local delivery and not Rake

@@ -8,13 +8,13 @@ format) from the loaded credentials. Supports multiple profiles and
 alternate locations for the credentials file.
 
 ##Requirements
-#### Platforms
+### Platforms
 - Any platform supported by Chef
 
-#### Chef
+### Chef
 - Chef 12.1+
 
-#### Cookbooks
+### Cookbooks
 - none
 
 ## Attributes

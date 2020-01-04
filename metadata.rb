@@ -5,7 +5,7 @@ license 'Apache-2.0'
 description 'Creates /root/.aws/config from chef-vault'
 version '1.0.2'
 
-%w(amazon centos debian mac_os_x opensuse opensuseleap oracle redhat scientific solaris2 suse ubuntu windows aix).each do |os|
+%w(amazon centos debian mac_os_x opensuseleap oracle redhat scientific solaris2 suse ubuntu windows aix).each do |os|
   supports os
 end
 

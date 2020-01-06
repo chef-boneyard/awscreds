@@ -1,10 +1,8 @@
 require 'spec_helper'
 
-describe 'default recipe on Ubuntu 14.04' do
+describe 'default recipe on Ubuntu' do
   let(:chef_run) do
-    ChefSpec::ServerRunner.new do |node|
-      node.automatic[:lsb][:codename] = 'trusty'
-    end.converge('awscreds::default')
+    ChefSpec::ServerRunner.new(platform: 'ubuntu')
   end
 
   it 'converges successfully' do

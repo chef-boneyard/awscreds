@@ -9,7 +9,7 @@ describe 'awscreds::default' do
   describe file('/root/.aws/config') do
     its(:content) do
       should eq File.read(
-        File.expand_path('../test-output.txt', __FILE__))
+        File.expand_path('test-output.txt', __dir__))
     end
   end
 end
